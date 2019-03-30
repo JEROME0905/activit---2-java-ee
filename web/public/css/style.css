@@ -1,0 +1,11 @@
+body {
+    font-family: arial,sans-serif;
+}
+
+#btn_formulaire {
+
+}
+
+tr td:nth-child(1) {
+    text-align: right;
+}
