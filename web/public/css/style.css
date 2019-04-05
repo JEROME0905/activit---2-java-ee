@@ -9,7 +9,7 @@ h1 {
 
 
 #bloc-lecture-enregistrement {
-    padding-top: 12vh;
+    padding-top: 4vh;
 }
 
 /* Mise en forme des elements du tableau*/
@@ -39,4 +39,14 @@ tr td:nth-child(2) {
 
 tr td:nth-child(2) input{
     width: 100%;
+}
+
+#endform {
+    position:fixed;
+    top: 100px;
+    right: 250px ;
+}
+
+#enregistrement-traduction {
+    height: 8vh;
 }
