@@ -47,36 +47,33 @@
                 <div class="panel-heading">
                     <h1 class="panel-title">ENREGISTREMENT DE LA TRADUCTION </h1>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" id="enregistrement-traduction">
 
                 </div>
             </div>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"></div>
     </div>
-    <div class="row">
-        <form method="post" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <!-- Utilisez flex blox-->
-            <table>
-                <tbody class="row">
-
-                <c:forEach items="${ subtitles }" var="line" varStatus="status">
-                    <tr class="col-lg-4">
-                        <tr>
-                            <td><c:out value="${ line }"/></td>
-                            <td><input type="text" name="line${ status.index }" id="line${ status.index }" size="35"/></td>
-                        </tr>
-
-                    </tr>
-                </c:forEach>
-                </tbody>
-            </table>
-            </br>
-            <label for="newfile">nom du fichier traduit :</label> <input type="text" name="newfile" id="newfile"/>
-            <input type="submit" id="btn_formulaire"/>
-        </form>
-    </div>
 </div>
+<form method="post">
+    <div id="endform">
+        <label for="newfile">nom du fichier traduit :</label> <input type="text" name="newfile" id="newfile"/>
+        <input type="submit" id="btn_formulaire"/>
+    </div>
+    <!-- Utilisez flex blox-->
+    <table>
+        <tbody>
+        <c:forEach items="${ subtitles }" var="line" varStatus="status">
+            <tr>
+                <td><c:out value="${ line }"/></td>
+                <td><input type="text" name="line${ status.index }" id="line${ status.index }"/></td>
+            </tr>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+    </br>
+</form>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
