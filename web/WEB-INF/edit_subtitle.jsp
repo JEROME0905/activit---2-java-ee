@@ -29,7 +29,7 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h1 class="panel-title"> CHOIX DU FICHIER A TRADUIRE</h1>
+                    <h1 class="panel-title">REPRENDRE LE FICHIER EN COUR DE TRADUCTION</h1>
                 </div>
                 <div class="panel-body">
                     <form method="post" action="activité_2_java_ee_war_exploded//edit">
@@ -37,6 +37,7 @@
                         <select name="listesfichierstraduit" id="monsFichier">
                             <option value="password_presentation.srt">password_presentation.srt</option>
                         </select>
+                        <input type="submit" id="btn_formulaire"/>
                     </form>
                 </div>
             </div>
