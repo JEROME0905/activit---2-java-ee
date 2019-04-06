@@ -7,7 +7,6 @@ h1 {
     font-size: 1.5em !important;
 }
 
-
 #bloc-lecture-enregistrement {
     padding-top: 4vh;
 }
@@ -42,9 +41,9 @@ tr td:nth-child(2) input{
 }
 
 #endform {
-    position:fixed;
-    top: 100px;
-    right: 250px ;
+    position:relative;
+    top: -70px;
+    left: 1140px ;
 }
 
 #enregistrement-traduction {
