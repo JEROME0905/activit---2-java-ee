@@ -1,0 +1,7 @@
+CREATE DATABASE activiteJavaEE2 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+CREATE TABLE  activiteJavaEE2.name (
+ id INT ( 11 ) NOT NULL AUTO_INCREMENT ,
+ fileName VARCHAR( 200 ) NOT NULL ,
+ PRIMARY KEY ( id )
+) ENGINE = INNODB;
